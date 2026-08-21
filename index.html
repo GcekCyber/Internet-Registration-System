@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internet Registration - GCE Karad</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Government College of Engineering, Karad</h1>
+        <h2>Internet Registration Form</h2>
+        <p>Vidyanagar, Karad, Maharashtra</p>
+    </header>
+
+    <form id="registrationForm">
+
+        <h3>Applicant Information</h3>
+
+        <div class="row">
+
+            <div class="field">
+                <label>Full Name *</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="field">
+                <label>Student / Employee ID *</label>
+                <input type="text" id="id" required>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="field">
+                <label>Department *</label>
+                <select id="department" required>
+                    <option value="">Select Department</option>
+                    <option>Computer Engineering</option>
+                    <option>Information Technology</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Electrical Engineering</option>
+                    <option>Electronics & Telecommunication</option>
+                    <option>MCA</option>
+                    <option>Administration</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Designation / Year</label>
+                <input type="text" id="designation">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="field">
+                <label>Mobile Number *</label>
+                <input type="tel" id="mobile"
+                       pattern="[0-9]{10}"
+                       maxlength="10"
+                       required>
+            </div>
+
+            <div class="field">
+                <label>Email ID *</label>
+                <input type="email" id="email" required>
+            </div>
+
+        </div>
+
+        <h3>Device Information</h3>
+
+        <div class="row">
+
+            <div class="field">
+                <label>Device Type *</label>
+                <select id="device" required>
+                    <option value="">Select Device</option>
+                    <option>Desktop Computer</option>
+                    <option>Laptop</option>
+                    <option>Mobile</option>
+                    <option>Tablet</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Operating System</label>
+                <select id="os">
+                    <option>Windows</option>
+                    <option>Linux</option>
+                    <option>macOS</option>
+                    <option>Android</option>
+                    <option>iOS</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="field">
+                <label>MAC Address *</label>
+                <input type="text"
+                       id="mac"
+                       placeholder="XX:XX:XX:XX:XX:XX"
+                       required>
+            </div>
+
+            <div class="field">
+                <label>Existing IP Address</label>
+                <input type="text"
+                       id="ip"
+                       placeholder="Example: 192.168.1.100">
+            </div>
+
+        </div>
+
+        <h3>Internet Access Details</h3>
+
+        <div class="field">
+            <label>Purpose of Internet Access *</label>
+
+            <textarea id="purpose"
+                      rows="4"
+                      placeholder="Enter purpose of internet access"
+                      required></textarea>
+        </div>
+
+        <div class="field">
+
+            <label>Type of Internet Access *</label>
+
+            <select id="access" required>
+
+                <option value="">Select Access Type</option>
+
+                <option>Wired LAN</option>
+
+                <option>Wi-Fi</option>
+
+                <option>Both LAN and Wi-Fi</option>
+
+            </select>
+
+        </div>
+
+        <div class="declaration">
+
+            <label>
+
+                <input type="checkbox"
+                       id="declaration"
+                       required>
+
+                I declare that the information provided above is
+                correct and I will use the internet facility only
+                for authorized academic/official purposes.
+
+            </label>
+
+        </div>
+
+        <div class="buttons">
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+            <button type="reset" class="reset">
+                Reset
+            </button>
+
+        </div>
+
+        <div id="message"></div>
+
+    </form>
+
+    <footer>
+
+        <p>
+            IT / Data Center Department |
+            Government College of Engineering, Karad
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
